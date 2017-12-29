@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<!--<?php?> -->
+		<?php
+			/*************global variable***************/
+			$b = 5;//global scope
+			function mytest(){
+				echo "variable x $b inside";
+				echo "<br>";
+			}
+			mytest();
+			echo "variable x is $b outside global";
+			echo "<br>";
+			
+			/************** local variable ************/
+			function test2(){
+				$c = 6;//local scope 
+				echo "variable $c is inside";
+				echo "<br>";
+			}
+			echo "variable $c is outside";
+			echo "<br>";
+			test2();
+			/******************************************/
+			echo "my first PHP script!";
+			$a = 5+5;
+			echo $a;
+			
+			$txt = "W3Schools.com";
+			echo "I love " . $txt . "!";
+			echo "<br>";
+			echo "I love $txt!";
+		?>
+	</body>
+</html>
